@@ -1,0 +1,34 @@
+{
+  "name": "sandbox-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./build/index.js",
+    "test": "jest --coverage",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "//": [
+    "redux: main dependency",
+    "redux-act: See https://github.com/pauldijou/redux-act",
+    "babel-cli, babel-preset-node6 : Without these, keywords such as import will not be recognized",
+    "babel-plugin-transform-object-rest-spread : needed for code like ...state"
+  ],
+  "dependencies": {
+    "redux": "^3.7.2",
+    "redux-act": "^1.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-node6": "^11.0.0",
+    "jest": "^20.0.4",
+    "webpack": "^3.5.5"
+  }
+}
